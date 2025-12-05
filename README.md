@@ -84,4 +84,11 @@ If there are connection errors:
 - Ensure EC2 security group allows inbound SSH (port 22)
 - Ensure database RDS security group allows inbound traffic on port 3306
 
+ ### Docker compose installation 
+ sudo curl -L "https://github.com/docker/compose/releases/download/v2.29.2/docker-compose-$(uname -s)-$(uname -m)" \
+  -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+
+
 
